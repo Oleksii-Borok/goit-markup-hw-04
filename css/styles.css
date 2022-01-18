@@ -9,6 +9,7 @@
   --adress-color: rgba(255, 255, 255, 0.6);
   --border-header: #ececec;
   --border-works-item: #eeeeee;
+  --border-clients-item: #afb1b8;
 }
 
 .list {
@@ -263,7 +264,7 @@ body {
 .team-member-social-link {
   width: 44px;
   height: 44px;
-  background-color: teal;
+  background-color: rgb(229, 236, 238);
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -277,6 +278,25 @@ body {
 
 .team-member-social-item + .team-member-social-item {
   margin-left: 10px;
+}
+
+/* ----------------clients-------------- */
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-item {
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--border-clients-item);
+}
+
+.clients-list {
+  flex-basis: calc(100% / 6 - 30px);
 }
 
 /* ---------------portfolio-works------------------ */
