@@ -200,6 +200,22 @@ body {
   padding-bottom: 0;
 }
 
+.strength-image {
+  width: 270px;
+  height: 120px;
+  background-color: var(--button-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.strength-link {
+  display: flex;
+  justify-content: center;
+}
+
 /* ----------------general--------------- */
 
 .section-title {
@@ -264,11 +280,24 @@ body {
 .team-member-social-link {
   width: 44px;
   height: 44px;
-  background-color: rgb(229, 236, 238);
   border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.team-member-social-link:hover,
+.team-member-social-link:focus {
+  background-color: var(--blue-color);
+}
+
+.team-member-social-link:hover .team-member-social-icon,
+.team-member-social-link:focus .team-member-social-icon {
+  fill: var(--white-color);
+}
+
+.team-member-social-icon {
+  fill: var(--border-clients-item);
 }
 
 .team-member-social {
@@ -282,17 +311,30 @@ body {
 
 /* ----------------clients-------------- */
 
-.clients-item + .clients-item {
-  margin-left: 30px;
-}
-
-.clients-item {
+.clients-link {
   padding: 16px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 4px;
+}
+
+.clients-item-box {
   border: 1px solid var(--border-clients-item);
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: var(--border-clients-item);
+}
+
+.clients-item-box:hover,
+.clients-item-box:focus {
+  border-color: var(--blue-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--blue-color);
 }
 
 .clients-list {
@@ -325,6 +367,11 @@ body {
 .works-space {
   padding: 20px 24px 20px 24px;
   border: 1px solid var(--border-works-item);
+}
+
+.works-item:hover,
+.works-item:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* ---------------------button---------------------- */
@@ -378,7 +425,7 @@ body {
 .current-button {
   background-color: var(--blue-color);
   color: var(--white-color);
-  box-shadow: 0px, 4px var(--team-shadow);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* ------------------------footer----------------------- */
@@ -413,4 +460,11 @@ body {
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.join {
+}
+
+.join-list {
+  display: flex;
 }
