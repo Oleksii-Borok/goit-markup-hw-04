@@ -120,6 +120,11 @@ body {
   color: var(--blue-color);
 }
 
+.contacts-icon:hover,
+.contacts-icon:focus {
+  fill: var(--blue-color);
+}
+
 .header-contacts {
   display: flex;
   margin-left: auto;
@@ -128,6 +133,17 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
+}
+
+.contacts-block {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-icon {
+  padding-right: 10px;
+  padding-top: 6px;
+  fill: var(--main-text-color);
 }
 
 /* -------------------------main section------------------------ */
@@ -463,8 +479,49 @@ body {
 }
 
 .join {
+  margin-left: 70px;
+  margin-right: auto;
+}
+
+.join-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: var(--main-text-color);
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--blue-color);
+}
+
+.join-item + .join-item {
+  margin-left: 10px;
+}
+
+.join-link-icon {
+  fill: var(--white-color);
+  display: inline-flex;
+  justify-content: center;
+}
+
+.join-item {
+  display: inline;
+}
+
+.join-title {
+  color: var(--white-color);
+  text-transform: uppercase;
 }
 
 .join-list {
-  display: flex;
+  padding-top: 20px;
+}
+
+.footer-container {
+  margin-right: auto;
+  display: inline-flex;
 }
